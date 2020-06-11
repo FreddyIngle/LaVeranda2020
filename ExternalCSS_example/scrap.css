@@ -1,0 +1,90 @@
+body{
+    background-image: url("hrefs/fancy-bar-seating.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+input{
+    background-color:rgba(0.0,0.0,0.0,0.0);
+    color:white;
+    padding:4px;
+    border:none;
+    border-bottom:2px solid white;
+    outline: none;
+}
+::placeholder{
+    color:white;
+    padding:1em;
+}
+input[type = "text"]select{
+    border:none;
+    border-bottom:2px solid white;
+}
+
+input:focus{
+    border:none;
+    border-bottom:2px solid white;
+}
+textarea{
+    background-color:rgba(46, 49, 49, 0.8);
+    border: 1px solid white;
+    color:white;
+    outline:none;
+}
+p, label{
+    color:white;
+}
+button{
+   background-color:rgba(46, 49, 49, 0.8);
+    border:1px solid white;
+    width: 100px;
+    text-align: center;
+    color:white
+}
+button:hover{
+
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+}
+/* alternative to flex-box, use a grid to put items in two columns*/
+.form-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 50px 50px 50px 2fr 20px;
+    grid-template-areas:
+    "first-name phone ."
+    "last-name subject ."
+    "email text-area ."
+    ". text-area ."
+    ". submit .";
+}
+.first-name{
+    grid-area:first-name;
+
+}
+.last-name{
+    grid-area:last-name;
+
+}
+.email{
+    grid-area:email;
+
+}
+.phone{
+    grid-area:phone;
+
+}
+.subject{
+    grid-area:subject;
+}
+.text-area{
+    grid-area: text-area;
+}
+.submit{
+    grid-area:submit;
+}

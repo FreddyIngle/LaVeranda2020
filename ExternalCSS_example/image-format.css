@@ -1,0 +1,123 @@
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(11,10vw);
+    grid-gap:5px;
+    grid-row-gap:0;
+
+}
+figure{
+    margin-top: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.gallery_img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.gallery_item--1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-bottom: 5px;
+}
+.gallery_item--2{
+    grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:3;
+    margin-bottom:5px;
+}
+.gallery_item--3{
+    grid-column-start:5;
+    grid-column-end: 9;
+    grid-row-start:1;
+    grid-row-end:5;
+    margin-bottom: 5px;
+}
+.gallery_item--4{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:5;
+    margin-bottom: 5px;
+}
+.gallery_item--5{
+    grid-column-start:3;
+    grid-column-end: 5;
+    grid-row-start:3;
+    grid-row-end:5;
+    margin-bottom: 5px;
+}
+.gallery_item--6{
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:5;
+    grid-row-end:7;
+    margin-bottom: 5px;
+}
+.gallery_item--7{
+    grid-column-start:5;
+    grid-column-end: 7;
+    grid-row-start:5;
+    grid-row-end:9;
+    margin-bottom: 5px;
+}
+.gallery_item--8 {
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    margin-bottom: 5px;
+}
+.gallery_item--9{
+    grid-column-start:9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-bottom: 5px;
+}
+.gallery_item--10{
+    grid-column-start:1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    margin-bottom: 5px;
+}
+.gallery_item--11{
+    grid-column-start:5;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    margin-bottom: 5px;
+}
+ body{
+     background-image: url("hrefs/fancy-bar-seating.jpg");
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     background-repeat: no-repeat;
+     min-height: 100vh;
+ }
+
+.img-text{
+    position: absolute;
+    display:none;
+    min-width:100%;
+    z-index:1;
+    color:white;
+}
+.img-text img:hover{
+    display:block;
+}
+#gallery img:hover{
+    opacity: 50%;
+}
